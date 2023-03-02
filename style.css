@@ -110,7 +110,32 @@ footer{
 .footer-column{
     width: 30%;
     padding: 2.5rem;
+    
+    
+
 }
 .footer-column-info{
     padding: 0.7rem;
+    display: flex;
+    align-items: baseline;
+}
+.about-us{
+   display: flex; 
+   width: 70%;
+   justify-content: space-evenly;
+   opacity: 0.6;
+}
+
+.footer-icon{
+    width: 5%;
+    display: inline;
+    /* padding-right: 1em; */
+    /* padding-top: 1rem; */
+    height: 2vh;
+}
+.footer-details{
+    /* display: flex; */
+    padding-left: 1rem;
+    opacity: 0.6;
+    /* width: 80%; */
 }
