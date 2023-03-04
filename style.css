@@ -76,6 +76,9 @@ section{
     width: 45%;
     padding: 1rem;
 }
+.grow-svg{
+    justify-content: flex-end;
+}
 
 p{
     font-size: 13.5px;
@@ -85,6 +88,9 @@ p{
 .illustration-svg{
     width: 35%;
 }
+/* .grow-one{
+    display: none;
+} */
 
 .Ready{
     font-size: 18px;
@@ -147,7 +153,7 @@ footer{
 .socials{
     display: flex;
     width: 30%;
-    flex-basis: ;
+    /* flex-basis: ; */
    
 }
 
@@ -168,4 +174,50 @@ footer{
 }
 .copyright{
     font-size: 10px;
+    
 }
+
+@media screen and (max-width: 950px) {
+    header{
+        background-image: url("./images/bg-hero-mobile.svg");
+        padding: 2rem;
+    }
+
+    .subheader{
+        display: block;
+        text-align: center;
+        /* width: 100%; */
+    }
+    .huddle{
+        margin: 1rem auto;
+        width: 60%;
+        padding: 1rem;
+    }
+    section{
+        display: block;
+    }
+    /* .grow-two{
+        display: block;
+    } */
+}
+/* @media screen and(max-width: 950px){
+    header{
+        background-image: url("./images/bg-hero-mobile.svg");
+    } 
+    
+    .sub-header{
+        display: block;
+        text-align: center;
+    }    
+} */
+
+/* @media screen and (max-width: 850px) {
+    header{
+        background-image: url("./images/bg-hero-mobile.svg");
+    } 
+    
+    .sub-header{
+        display: block;
+        text-align: center;
+    }
+} */
