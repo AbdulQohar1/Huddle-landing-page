@@ -130,6 +130,7 @@ footer{
    width: 70%;
    justify-content: space-evenly;
    opacity: 0.6;
+   cursor: pointer;
 }
 
 .footer-icon{
@@ -146,6 +147,7 @@ footer{
 .socials{
     display: flex;
     width: 30%;
+    flex-basis: ;
    
 }
 
@@ -154,12 +156,16 @@ footer{
 }
 
 .icon{
-    width: 3%;
-    padding: 0.3rem;
+    /* width: 5%; */
+    padding: 0.2rem;
+    transition: color 0.3s;
     margin: auto 0.5rem;
     border: 1px solid white;
     border-radius: 50%;
     width: 10%;
     text-align: center;
 
+}
+.copyright{
+    font-size: 10px;
 }
