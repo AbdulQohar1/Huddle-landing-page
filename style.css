@@ -1,4 +1,4 @@
-.body{
+body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -74,7 +74,7 @@ section{
 
 .illustration-text{
     width: 45%;
-    padding: 1rem;
+    /* padding: 1rem; */
 }
 .grow-svg{
     justify-content: flex-end;
@@ -94,14 +94,17 @@ p{
 
 .Ready{
     font-size: 18px;
-    padding: 1.5rem;
+    padding:2.5rem 1.5rem;
     width: 40%;
     margin: 4rem auto;
     border: 2px solid rgb(224, 220, 220);
     border-radius: 15px;
     text-align: center;
-    margin-bottom: -2rem;
+    margin-bottom: -4rem;
     background-color: #fff !important;
+    z-index: 1;
+    z-index: 1;
+    position: relative;
     
 }
 
@@ -113,10 +116,12 @@ footer{
     justify-content: space-between;
     align-items: center;
     align-content: flex-start;
+    z-index: -1;
 }
 
 .footer-logo{
     width: 50%;
+    color: #fff;
    
 }
 
@@ -138,6 +143,9 @@ footer{
    opacity: 0.6;
    cursor: pointer;
 }
+/* .about-us:hover{
+    text-decoration: underline;
+} */
 
 .footer-icon{
     width: 5%;
@@ -178,6 +186,9 @@ footer{
 }
 
 @media screen and (max-width: 950px) {
+    body{
+        margin: auto;
+    }
     header{
         background-image: url("./images/bg-hero-mobile.svg");
         padding: 2rem;
@@ -195,29 +206,20 @@ footer{
     }
     section{
         display: block;
+        text-align: center;
+        margin: 1rem auto;
+        width: 60%;
     }
-    /* .grow-two{
-        display: block;
-    } */
+    .illustration-svg{
+        width: 100%;
+    }
+    .illustration-text{
+        margin: auto;
+        width: 80%;
+        /* padding: 1em auto; */
+    }
+    .Ready{
+        width: 60%;
+    }
+    
 }
-/* @media screen and(max-width: 950px){
-    header{
-        background-image: url("./images/bg-hero-mobile.svg");
-    } 
-    
-    .sub-header{
-        display: block;
-        text-align: center;
-    }    
-} */
-
-/* @media screen and (max-width: 850px) {
-    header{
-        background-image: url("./images/bg-hero-mobile.svg");
-    } 
-    
-    .sub-header{
-        display: block;
-        text-align: center;
-    }
-} */
