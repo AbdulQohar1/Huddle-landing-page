@@ -2,6 +2,7 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 header{
@@ -72,12 +73,13 @@ section{
     justify-content: space-between;
 }
 
-.illustration-text{
-    width: 45%;
-    /* padding: 1rem; */
+#grow-svg-mobile{
+    display: none;
 }
-.grow-svg{
-    justify-content: flex-end;
+
+.illustration-text{
+    width: 30%;
+    padding: 5rem;
 }
 
 p{
@@ -88,9 +90,6 @@ p{
 .illustration-svg{
     width: 35%;
 }
-/* .grow-one{
-    display: none;
-} */
 
 .Ready{
     font-size: 18px;
@@ -105,7 +104,6 @@ p{
     z-index: 1;
     z-index: 1;
     position: relative;
-    
 }
 
 footer{
@@ -119,10 +117,19 @@ footer{
     z-index: -1;
 }
 
+.F-logo{
+    display: flex;
+    /* justify-content: flex-start; */
+}
+
+.F-logo-content{
+    font-size: 25px;
+    opacity: 1;
+}
+
 .footer-logo{
     width: 50%;
     color: #fff;
-   
 }
 
 .footer-column{
@@ -143,9 +150,6 @@ footer{
    opacity: 0.6;
    cursor: pointer;
 }
-/* .about-us:hover{
-    text-decoration: underline;
-} */
 
 .footer-icon{
     width: 5%;
@@ -160,9 +164,7 @@ footer{
 
 .socials{
     display: flex;
-    width: 30%;
-    /* flex-basis: ; */
-   
+    width: 30%;  
 }
 
 .icon:hover{
@@ -170,7 +172,6 @@ footer{
 }
 
 .icon{
-    /* width: 5%; */
     padding: 0.2rem;
     transition: color 0.3s;
     margin: auto 0.5rem;
@@ -178,17 +179,17 @@ footer{
     border-radius: 50%;
     width: 10%;
     text-align: center;
-
 }
+
 .copyright{
     font-size: 10px;
-    
 }
 
 @media screen and (max-width: 950px) {
     body{
         margin: auto;
     }
+
     header{
         background-image: url("./images/bg-hero-mobile.svg");
         padding: 2rem;
@@ -197,27 +198,39 @@ footer{
     .subheader{
         display: block;
         text-align: center;
-        /* width: 100%; */
     }
+
     .huddle{
         margin: 1rem auto;
-        width: 60%;
+        width: 70%;
         padding: 1rem;
     }
+
     section{
         display: block;
         text-align: center;
         margin: 1rem auto;
         width: 60%;
     }
+
     .illustration-svg{
         width: 100%;
     }
+
+    #grow-svg-desktop{
+        display: none;
+    }
+
+    #grow-svg-mobile{
+        display: block;
+    }
+
     .illustration-text{
         margin: auto;
         width: 80%;
-        /* padding: 1em auto; */
+      
     }
+
     .Ready{
         width: 60%;
     }
