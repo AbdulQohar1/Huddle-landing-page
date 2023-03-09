@@ -8,8 +8,6 @@ body{
 header{
     background-image: url("./images/bg-hero-desktop.svg");
     padding: 2rem;
-   
- 
 }
 
 .main-header{
@@ -63,11 +61,11 @@ header{
     cursor: pointer;
 }
 
-section{
+.grow-together{
     width: 70%;
     padding: 2rem;
     display: flex;
-    border: 2px solid rgb(224, 220, 220);
+    border: none;
     border-radius: 15px;
     margin: 2rem auto;
     justify-content: space-between;
@@ -104,22 +102,25 @@ p{
     z-index: 1;
     z-index: 1;
     position: relative;
+    /* box-shadow: 2px 2px rgb(228,234,231); */
 }
 
 footer{
     background-color: #00252f;
-    padding: 4rem;
+    padding: 90px 70px 50px 70px;
     color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: flex-start;
     z-index: -1;
+}
+
+.footermain{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding: 1rem;
 }
 
 .F-logo{
     display: flex;
-    /* justify-content: flex-start; */
 }
 
 .F-logo-content{
@@ -127,34 +128,20 @@ footer{
     opacity: 1;
 }
 
-.footer-logo{
-    width: 50%;
-    color: #fff;
-}
-
-.footer-column{
-    width: 30%;
-    padding: 2.5rem;
-}
-
 .footer-column-info{
-    padding: 0.7rem;
     display: flex;
     align-items: baseline;
 }
 
-.about-us{
-   display: flex; 
-   width: 70%;
-   justify-content: space-evenly;
-   opacity: 0.6;
-   cursor: pointer;
+.address{
+    width: 70%;
 }
 
-.footer-icon{
-    width: 5%;
-    display: inline;
-    height: 2vh;
+.about-us{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   opacity: 0.6;
+   cursor: pointer;
 }
 
 .footer-details{
@@ -164,7 +151,6 @@ footer{
 
 .socials{
     display: flex;
-    width: 30%;  
 }
 
 .icon:hover{
@@ -172,23 +158,53 @@ footer{
 }
 
 .icon{
-    padding: 0.2rem;
+    padding: 10px;
     transition: color 0.3s;
-    margin: auto 0.5rem;
     border: 1px solid white;
     border-radius: 50%;
-    width: 10%;
-    text-align: center;
+}
+
+.facebook{
+    margin: auto 0.5rem;
+}
+
+.twitter{
+    margin: auto 0.5rem;
+}
+
+.instagram{
+    margin: auto 0.5rem;
 }
 
 .copyright{
     font-size: 10px;
+    text-align: end;
+    padding-right: 80px;
+}
+
+@media screen and (max-width: 1100px) {
+    footer{
+        padding: 70px 30px 30px 30px;
+    }
+}
+
+@media screen and (max-width: 969px) {
+    footer{
+        padding: 70px 40px 30px 40px;
+    }
+    .footermain{
+        grid-template-columns: 1fr;
+    }
+    .about-us{
+        grid-template-columns: 1fr 1fr;
+    }
+    .copyright{
+        text-align: start;
+    }
+
 }
 
 @media screen and (max-width: 950px) {
-    body{
-        margin: auto;
-    }
 
     header{
         background-image: url("./images/bg-hero-mobile.svg");
@@ -202,15 +218,15 @@ footer{
 
     .huddle{
         margin: 1rem auto;
-        width: 70%;
+        width: 80%;
         padding: 1rem;
     }
 
-    section{
+    .grow-together{
         display: block;
         text-align: center;
         margin: 1rem auto;
-        width: 60%;
+        width: 70%;
     }
 
     .illustration-svg{
@@ -227,12 +243,13 @@ footer{
 
     .illustration-text{
         margin: auto;
-        width: 80%;
+        padding: 1rem 2rem;
+        width: 60%;
       
     }
 
     .Ready{
-        width: 60%;
+        width: 65%;
+        padding:2rem 1.5rem;
     }
-    
 }
